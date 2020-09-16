@@ -61,8 +61,18 @@ namespace Victory.ToolBox
         }
 
 
+
         #endregion
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+            this.timer1.Enabled = false;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+             this.timer1.Enabled = true;
+        }
     }
 }

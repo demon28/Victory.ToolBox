@@ -30,13 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btn_conn_decode = new System.Windows.Forms.Button();
-            this.btn_conn_encode = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_conn_miwen = new System.Windows.Forms.TextBox();
-            this.tb_conn_mingwen = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lb_datenow = new System.Windows.Forms.Label();
+            this.tb_date_timesapn = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_md5_32 = new System.Windows.Forms.TextBox();
@@ -44,16 +42,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tb_md5_16 = new System.Windows.Forms.TextBox();
             this.tb_md5_mingwen = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_conn_decode = new System.Windows.Forms.Button();
+            this.btn_conn_encode = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_conn_miwen = new System.Windows.Forms.TextBox();
+            this.tb_conn_mingwen = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lb_datenow = new System.Windows.Forms.Label();
-            this.tb_date_timesapn = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -66,6 +68,125 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(824, 596);
             this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.lb_datenow);
+            this.tabPage3.Controls.Add(this.tb_date_timesapn);
+            this.tabPage3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(816, 570);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "时间戳";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 103);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 16);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "当前时间戳：";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(11, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "当前时间：";
+            // 
+            // lb_datenow
+            // 
+            this.lb_datenow.AutoSize = true;
+            this.lb_datenow.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb_datenow.Location = new System.Drawing.Point(132, 22);
+            this.lb_datenow.Name = "lb_datenow";
+            this.lb_datenow.Size = new System.Drawing.Size(88, 16);
+            this.lb_datenow.TabIndex = 4;
+            this.lb_datenow.Text = "当前时间：";
+            // 
+            // tb_date_timesapn
+            // 
+            this.tb_date_timesapn.Location = new System.Drawing.Point(134, 99);
+            this.tb_date_timesapn.Name = "tb_date_timesapn";
+            this.tb_date_timesapn.Size = new System.Drawing.Size(248, 26);
+            this.tb_date_timesapn.TabIndex = 2;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.tb_md5_32);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.tb_md5_16);
+            this.tabPage2.Controls.Add(this.tb_md5_mingwen);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(816, 570);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = " MD5";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 358);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "32位大写：";
+            // 
+            // tb_md5_32
+            // 
+            this.tb_md5_32.Location = new System.Drawing.Point(35, 373);
+            this.tb_md5_32.Multiline = true;
+            this.tb_md5_32.Name = "tb_md5_32";
+            this.tb_md5_32.Size = new System.Drawing.Size(730, 94);
+            this.tb_md5_32.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "16位大写：";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "明文：";
+            // 
+            // tb_md5_16
+            // 
+            this.tb_md5_16.Location = new System.Drawing.Point(35, 201);
+            this.tb_md5_16.Multiline = true;
+            this.tb_md5_16.Name = "tb_md5_16";
+            this.tb_md5_16.Size = new System.Drawing.Size(730, 100);
+            this.tb_md5_16.TabIndex = 1;
+            // 
+            // tb_md5_mingwen
+            // 
+            this.tb_md5_mingwen.Location = new System.Drawing.Point(35, 38);
+            this.tb_md5_mingwen.Multiline = true;
+            this.tb_md5_mingwen.Name = "tb_md5_mingwen";
+            this.tb_md5_mingwen.Size = new System.Drawing.Size(730, 96);
+            this.tb_md5_mingwen.TabIndex = 0;
+            this.tb_md5_mingwen.TextChanged += new System.EventHandler(this.tb_md5_mingwen_TextChanged);
             // 
             // tabPage1
             // 
@@ -137,126 +258,29 @@
             this.tb_conn_mingwen.Size = new System.Drawing.Size(736, 208);
             this.tb_conn_mingwen.TabIndex = 0;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.tb_md5_32);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.tb_md5_16);
-            this.tabPage2.Controls.Add(this.tb_md5_mingwen);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(816, 570);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = " MD5";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 358);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "32位大写：";
-            // 
-            // tb_md5_32
-            // 
-            this.tb_md5_32.Location = new System.Drawing.Point(35, 373);
-            this.tb_md5_32.Multiline = true;
-            this.tb_md5_32.Name = "tb_md5_32";
-            this.tb_md5_32.Size = new System.Drawing.Size(730, 94);
-            this.tb_md5_32.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "16位大写：";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "明文：";
-            // 
-            // tb_md5_16
-            // 
-            this.tb_md5_16.Location = new System.Drawing.Point(35, 201);
-            this.tb_md5_16.Multiline = true;
-            this.tb_md5_16.Name = "tb_md5_16";
-            this.tb_md5_16.Size = new System.Drawing.Size(730, 100);
-            this.tb_md5_16.TabIndex = 1;
-            // 
-            // tb_md5_mingwen
-            // 
-            this.tb_md5_mingwen.Location = new System.Drawing.Point(35, 38);
-            this.tb_md5_mingwen.Multiline = true;
-            this.tb_md5_mingwen.Name = "tb_md5_mingwen";
-            this.tb_md5_mingwen.Size = new System.Drawing.Size(730, 96);
-            this.tb_md5_mingwen.TabIndex = 0;
-            this.tb_md5_mingwen.TextChanged += new System.EventHandler(this.tb_md5_mingwen_TextChanged);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.lb_datenow);
-            this.tabPage3.Controls.Add(this.tb_date_timesapn);
-            this.tabPage3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(816, 570);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "时间戳";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lb_datenow
+            // button1
             // 
-            this.lb_datenow.AutoSize = true;
-            this.lb_datenow.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lb_datenow.Location = new System.Drawing.Point(132, 22);
-            this.lb_datenow.Name = "lb_datenow";
-            this.lb_datenow.Size = new System.Drawing.Size(88, 16);
-            this.lb_datenow.TabIndex = 4;
-            this.lb_datenow.Text = "当前时间：";
+            this.button1.Location = new System.Drawing.Point(423, 99);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "暂停";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tb_date_timesapn
+            // button2
             // 
-            this.tb_date_timesapn.Location = new System.Drawing.Point(134, 99);
-            this.tb_date_timesapn.Name = "tb_date_timesapn";
-            this.tb_date_timesapn.Size = new System.Drawing.Size(248, 26);
-            this.tb_date_timesapn.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 22);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "当前时间：";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 103);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "当前时间戳：";
+            this.button2.Location = new System.Drawing.Point(525, 99);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 30);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "继续";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -268,12 +292,12 @@
             this.Text = "Victory工具箱";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -301,6 +325,8 @@
         private System.Windows.Forms.TextBox tb_date_timesapn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
